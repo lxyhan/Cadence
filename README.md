@@ -19,5 +19,5 @@
 
 ## Demo
 
-[Live Demo](https://cadence-phi-five.vercel.app/) (replace with the actual URL if deployed)
+[Live Demo](https://cadence-phi-five.vercel.app/)
 
