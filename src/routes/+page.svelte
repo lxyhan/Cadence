@@ -5,7 +5,7 @@ import Header from "../components/Header.svelte";
 
 </script>
 
-<Header>  \</Header>
+<Header> </Header>
 <div class="bg-white">
     <main class="isolate">
         <!-- Hero section -->
