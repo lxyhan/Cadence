@@ -1,38 +1,23 @@
-# sv
+# Cadence
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**Cadence** is a productivity app designed to help users stay organized, track tasks, and manage their workflow efficiently. Built with SvelteKit and Firebase, Cadence supports user authentication, task management, and customizable dashboards.
 
-## Creating a project
+## Table of Contents
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Features](#features)
+- [Demo](#demo)
 
-```bash
-# create a new project in the current directory
-npx sv create
+---
 
-# create a new project in my-app
-npx sv create my-app
-```
+## Features
 
-## Developing
+- **User Authentication**: Secure sign-up and login using email/password or Google sign-in.
+- **Task Management**: Create, update, and organize tasks.
+- **Dashboard**: Personalized dashboard to track productivity.
+- **Real-time Sync**: Tasks and data are synced in real-time using Firebase.
+- **Responsive UI**: Fully responsive design for mobile and desktop.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Demo
 
-```bash
-npm run dev
+[Live Demo](https://cadence-phi-five.vercel.app/) (replace with the actual URL if deployed)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
