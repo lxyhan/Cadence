@@ -1,4 +1,6 @@
 <script>
+  import Banner from "./Banner.svelte";
+
     // Track the menu's open/close state
     let isMenuOpen = false;
   
@@ -8,7 +10,7 @@
     }
   </script>
   
-  <header class="absolute inset-x-0 top-0 z-50">
+  <header class="absolute class:bg-transparent inset-x-0 top-0 z-50">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <!-- Logo -->
       <div class="flex lg:flex-1">
@@ -31,7 +33,7 @@
       <!-- Desktop Links (hidden on mobile) -->
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="#" class="text-sm font-semibold text-gray-900">About</a>
-        <a href="#features" class="text-sm font-semibold text-gray-900">Features</a>
+        <a href="#features" class="text-sm font-semibold text-gray-900">Blog</a>
         <a href="#faq" class="text-sm font-semibold text-gray-900">FAQ</a>
       </div>
     </nav>
@@ -59,7 +61,7 @@
           
           <div class="mt-6">
             <nav class="space-y-4">
-              <a href="#" class="block text-base font-semibold text-gray-900 hover:bg-gray-50 p-3 rounded-lg">Product</a>
+              <a href="#" class="block text-base font-semibold text-gray-900 hover:bg-gray-50 p-3 rounded-lg">About</a>
               <a href="#features" class="block text-base font-semibold text-gray-900 hover:bg-gray-50 p-3 rounded-lg">Features</a>
               <a href="#faq" class="block text-base font-semibold text-gray-900 hover:bg-gray-50 p-3 rounded-lg">FAQ</a>
             </nav>
@@ -70,5 +72,6 @@
         </div>
       </div>
     {/if}
+    <Banner>  </Banner>
   </header>
   

@@ -5,62 +5,61 @@ import Header from "../components/Header.svelte";
 
 </script>
 
+<Header>  \</Header>
 <div class="bg-white">
-    <Header></Header>
-
     <main class="isolate">
         <!-- Hero section -->
-        <div class="relative pt-14">
-            <!-- Background Image -->
-            <div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
-                <img
-                    src="/backdrop.png"
-                    alt="Background"
-                    style="
-                        width: 100%;
-                        height: 150vh;
-                        opacity: 0.2;
-                        filter: saturate(50%);
-                        object-fit: cover;
-                        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-                    "
-                />
-            </div>
-            
-            <!-- Top Section: Text and New Image Side by Side -->
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between py-24 sm:py-32">
-                    <!-- Left Column: Title, Description, and Buttons -->
-                    <div class="lg:w-1/2 text-left">
-                        <h1 class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Habit Tracking, Reimagined</h1>
-                        <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-                            Build Endurance and Resilience– Track Four Essential Habits for a Healthier, More Focused Life. Open Source and Free to Use.
-                        </p>
-                        <div class="mt-10 flex items-center gap-x-6">
-                            <a href="#" class="rounded-md bg-[#137369] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0b594f]">Get started for free</a>
-                            <a href="#faq" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">&rarr;</span></a>
-                        </div>
-                    </div>
-        
-                    <!-- Right Column: New Image -->
-                    <div class="lg:mt-0 lg:w-1/2 flex justify-center order-first lg:order-last">
-                        <!-- svelte-ignore a11y_img_redundant_alt -->
-                        <img src="/heroimage.png" alt="New Image" 
-                             class="max-w-full"
-                             style="
-                                 width: 90%;
-                                 max-width: 600px;
-                                 max-height: 450px; /* Control image height */
-                                 object-fit: cover;
-                                 object-position: center; /* Crop extra space */
-                                 border-radius: 12px; /* Optional: Add rounding */
-                                 image-rendering: -webkit-optimize-contrast;
-                             ">
-                    </div>
-                    
-                </div>
-            </div>
-        
+        <div class="relative pt-30 mt-10"> <!-- Adjusted pt-14 to pt-24 to move everything down -->
+          <!-- Background Image -->
+          <div class="absolute inset-0 -z-10 overflow-hidden h-[100vh]" aria-hidden="true"> <!-- Adjust height here -->
+              <img
+                  src="/backdrop.png"
+                  alt="Background"
+                  style="
+                      width: 100%;
+                      height: 100%;
+                      opacity: 0.2;
+                      filter: saturate(50%);
+                      object-fit: cover;
+                      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+                  "
+              />
+          </div>
+          
+          <!-- Hero Section Content -->
+          <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-24 pt-0 lg:pt-24"> <!-- Adjusted for responsive padding -->
+            <div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between py-24 sm:py-32">
+                  <!-- Left Column: Title, Description, and Buttons -->
+                  <div class="lg:w-1/2 text-left">
+                      <h1 class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Habit Tracking, Reimagined</h1>
+                      <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
+                          Build Endurance and Resilience– Track Four Essential Habits for a Healthier, More Focused Life. Open Source and Free to Use.
+                      </p>
+                      <div class="mt-10 flex items-center gap-x-6">
+                          <a href="/signup" class="rounded-md bg-[#137369] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0b594f]">Get started for free</a>
+                          <a href="#faq" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">&rarr;</span></a>
+                      </div>
+                  </div>
+      
+                  <!-- Right Column: New Image -->
+                  <div class="lg:mt-0 lg:w-1/2 flex justify-center order-first lg:order-last">
+                      <!-- svelte-ignore a11y_img_redundant_alt -->
+                      <img src="/heroimage.png" alt="New Image" 
+                           class="max-w-full"
+                           style="
+                               width: 90%;
+                               max-width: 600px;
+                               max-height: 450px;
+                               object-fit: cover;
+                               object-position: center;
+                               border-radius: 12px;
+                               image-rendering: -webkit-optimize-contrast;
+                           ">
+                  </div>
+              </div>
+          </div>
+      </div>
+      
             <!-- Bottom Section: Application View -->
             <!-- <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="flow-root rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10">
@@ -73,7 +72,6 @@ import Header from "../components/Header.svelte";
                     />
                 </div>
             </div> -->
-        </div>
         
     
         <!-- Feature section -->
@@ -108,7 +106,7 @@ import Header from "../components/Header.svelte";
         </div> -->
     
         <!-- FAQ Section -->
-        <section id="faq" class="mx-auto max-w-2xl px-6 pb-8 mt-24 lg:max-w-7xl lg:px-8 lg:pb-32">
+        <section id="faq" class="mx-auto max-w-2xl px-6 pb-8 mt-24 mb-10 lg:max-w-7xl lg:px-8 lg:pb-32">
             <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl mb-8">Frequently Asked Questions</h2>
             <dl class="space-y-8 divide-y divide-gray-900/10">
             <!-- Question 1 -->
