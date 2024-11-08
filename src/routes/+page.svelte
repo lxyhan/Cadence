@@ -1,6 +1,6 @@
 <script>
 
-  import Banner from "../components/Banner.svelte";
+import Banner from "../components/Banner.svelte";
 import Footer from "../components/Footer.svelte";
 import Header from "../components/Header.svelte";
 
