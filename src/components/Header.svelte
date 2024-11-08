@@ -33,9 +33,10 @@
       <!-- Desktop Links (hidden on mobile) -->
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="#" class="text-sm font-semibold text-gray-900">About</a>
-        <a href="#features" class="text-sm font-semibold text-gray-900">Blog</a>
         <a href="#faq" class="text-sm font-semibold text-gray-900">FAQ</a>
+        <a href="/login" class="text-sm font-semibold text-gray-900">Login</a>
       </div>
+
     </nav>
   
     <!-- Mobile Menu (shown when isMenuOpen is true) -->
@@ -66,7 +67,7 @@
               <a href="#faq" class="block text-base font-semibold text-gray-900 hover:bg-gray-50 p-3 rounded-lg">FAQ</a>
             </nav>
             <div class="mt-6">
-              <a href="#" class="block text-base font-semibold text-gray-900 hover:bg-gray-50 p-3 rounded-lg">Log in</a>
+              <a href="/login" class="block text-base font-semibold text-gray-900 hover:bg-gray-50 p-3 rounded-lg">Log in</a>
             </div>
           </div>
         </div>
